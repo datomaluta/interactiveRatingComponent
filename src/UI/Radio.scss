@@ -29,13 +29,15 @@
     }
 
     &:hover {
-      background-color: $color-medium-grey;
+      background-color: $color-orange;
       color: $color-white;
     }
   }
 
   &__input:checked ~ &__label {
     background-color: $color-orange;
+    color: $color-white;
+    background-color: $color-medium-grey;
     color: $color-white;
   }
 }

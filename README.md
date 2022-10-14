@@ -5,6 +5,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ## Table of contents
 
 - [Overview](#overview)
+  - [Screenshot](#screenshot)
   - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,6 +16,10 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+### Screenshot
+
+![](./src/assets/screen.jpg)
 
 This is Interactive rating component where you can choose rating and then after clicking on submit you can see your choice with some thanks text. I used Modal.js as Parent, where declare state and passed this state change function using props to children "Active" component. also rating state passed to Result.js component to display our choice. I also have displayResult state which initially is false and after We click on submiy this will be true and we can see result if one of this rating is chosen.
 
