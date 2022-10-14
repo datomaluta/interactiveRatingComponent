@@ -1,0 +1,23 @@
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+
+.container {
+  width: 32.7rem;
+  height: 36rem;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 1.5rem;
+  padding: 2.4rem;
+
+  display: flex;
+  justify-content: center;
+
+  @include respond-desktop {
+    width: 41.2rem;
+    height: 41.6rem;
+    padding: 3.2rem;
+  }
+}

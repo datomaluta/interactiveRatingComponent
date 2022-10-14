@@ -1,0 +1,41 @@
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+
+.radio {
+  display: flex;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: $color-dark-blue;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-medium-grey;
+    display: inline-block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    @include respond-desktop {
+      width: 5.1rem;
+      height: 5.1rem;
+    }
+
+    &:hover {
+      background-color: $color-medium-grey;
+      color: $color-white;
+    }
+  }
+
+  &__input:checked ~ &__label {
+    background-color: $color-orange;
+    color: $color-white;
+  }
+}

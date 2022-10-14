@@ -1,0 +1,53 @@
+@import "../../sass/variables.scss";
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: moveFromBottom 0.4s ease-out;
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__selected {
+    background-color: $color-dark-blue;
+    border-radius: 2.25rem;
+    padding: 0.7rem 1.2rem;
+
+    color: $color-orange;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__title {
+    color: $color-white;
+    font-weight: 700;
+    line-height: 3rem;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: $color-light-grey;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    // transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  100% {
+    // transform: translateY(0);
+    opacity: 1;
+  }
+}

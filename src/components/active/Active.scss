@@ -1,0 +1,81 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+
+  &__img-box {
+    background-color: $color-dark-blue;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+
+    @include respond-desktop {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @include respond-desktop {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__text {
+    color: $color-light-grey;
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+
+    @include respond-desktop {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__radio-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    background-color: $color-orange;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: 1.86667px;
+    padding: 1.2rem 0;
+    border-radius: 2.2rem;
+    margin-top: 2.4rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    font-family: inherit;
+
+    @include respond-desktop {
+      font-size: 1.5rem;
+      margin-top: 3.2rem;
+    }
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-orange;
+    }
+
+    &:active {
+      box-shadow: 0 2rem 2.5rem rgba(#000, 0.4);
+      transform: translateY(0.2rem);
+    }
+  }
+}
